@@ -15,4 +15,10 @@ class Tweet < ApplicationRecord
     def creationdate
         created_at.strftime("%e %b %Y")
     end    
+
+    def list_hash
+        tags.map{|t| t.hashtag.name}.join(',')
+    end
+
+
 end
