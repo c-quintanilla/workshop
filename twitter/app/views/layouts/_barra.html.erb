@@ -5,14 +5,18 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav"> 
             <li class="nav-item active"> 
-                <a class="btn btn-success" href="http://localhost:3000/">Home <span class="sr-only"></span></a>  </li> 
+            <%= link_to 'Home', root_path, class: 'navbar-brand' %>
+            <!--
+                <a class="btn btn-success" href="http://localhost:3000/">Simple Twitter <span class="sr-only"></span></a>  
+                </li> -->
             <li class="nav-item"> 
-                <a class="btn btn-warning" href="">See tweets</a> </li> 
+                <a class= 'navbar-brand' href="">See tweets</a> </li> 
             <li class="nav-item"> 
-                <a class="btn btn-success" href="">See hashtags</a> </li> 
+                <a class= 'navbar-brand' href="">See hashtags</a> </li> 
+                <!--
             <li class="nav-item"> 
                 <a class="btn btn-warning" href="">See Items</a> </li> 
-            
+            -->
         </ul>
     </div> 
 <div class="card text-black text-center col-sm-2" style="width: 18rem;font-size: 15px; background-color: #F1A0FF" >
