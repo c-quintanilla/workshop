@@ -13,10 +13,12 @@
                 <a class= 'navbar-brand' href="">See tweets</a> </li> 
             <li class="nav-item"> 
                 <a class= 'navbar-brand' href="">See hashtags</a> </li> 
-                <!--
-            <li class="nav-item"> 
-                <a class="btn btn-warning" href="">See Items</a> </li> 
-            -->
+                
+            <li > 
+            <% if user_signed_in? %>
+              <%= button_to 'Salir', destroy_user_session_path, method: :delete, class:'navbar-link'%>
+            </li> 
+            <% end %>
         </ul>
     </div> 
 <div class="card text-black text-center col-sm-2" style="width: 18rem;font-size: 15px; background-color: #F1A0FF" >
