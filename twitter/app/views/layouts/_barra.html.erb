@@ -5,14 +5,14 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav"> 
             <li class="nav-item active"> 
-            <%= link_to 'Home', root_path, class: 'navbar-brand' %>
+            <%= link_to 'Home', tweets_path, class: 'navbar-brand' %>
             <!--
                 <a class="btn btn-success" href="http://localhost:3000/">Simple Twitter <span class="sr-only"></span></a>  
                 </li> -->
             <li class="nav-item"> 
                 <a class= 'navbar-brand' href="http://localhost:3000/tweets">See tweets</a> </li> 
             <li class="nav-item"> 
-                <a class= 'navbar-brand' href="">See hashtags</a> </li> 
+                <a class= 'navbar-brand' href="http://localhost:3000/tweets/new">Create Tweet</a> </li> 
                 
             <li > 
             <% if user_signed_in? %>
