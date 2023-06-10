@@ -8,6 +8,7 @@ class TweetsController < ApplicationController
 
   # GET /tweets/1 or /tweets/1.json
   def show
+    @tweets = Tweet.find params[:id]
   end
 
   # GET /tweets/new
@@ -16,8 +17,8 @@ class TweetsController < ApplicationController
   end
 
   # GET /tweets/1/edit
-  def edit
-  end
+  #def edit
+  #end
 
   # POST /tweets or /tweets.json
   def create
@@ -65,6 +66,6 @@ class TweetsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def tweet_params
-      params.require(:tweet).permit(:body, :string)
+      params.require(:tweet).permit(:body, :user_id)
     end
 end

@@ -1,12 +1,15 @@
-<div id="<%= dom_id tweet %>">
-  <p>
-    <strong>Body:</strong>
-    <%= tweet.body %>
-  </p>
+<div class="card">
+  <div class="card-header">
+    <%=  tweet.user.full_name%>
+  </div>
 
-  <p>
-    <strong>String:</strong>
-    <%= tweet.string %>
-  </p>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+    <p><%= tweet.body %></p>
+    <footer class="blockquote-footer"> <%= tweet.creationdate %></footer>
+    <%= link_to 'Ver', tweet, class: "btn btn-success" %>
+    </blockquote>
+ 
+  </div>
 
 </div>

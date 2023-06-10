@@ -2,8 +2,7 @@
 
 <%= render @tweet %>
 
-<div>
-  <%= link_to "Edit this tweet", edit_tweet_path(@tweet) %> |
+<div> |
   <%= link_to "Back to tweets", tweets_path %>
 
   <%= button_to "Destroy this tweet", @tweet, method: :delete %>
