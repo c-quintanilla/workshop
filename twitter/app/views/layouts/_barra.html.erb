@@ -7,9 +7,9 @@
             <li class="nav-item active"> 
                 <a class="btn btn-success" href="http://localhost:3000/">Home <span class="sr-only"></span></a>  </li> 
             <li class="nav-item"> 
-                <a class="btn btn-warning" href="">See Dishes</a> </li> 
+                <a class="btn btn-warning" href="">See tweets</a> </li> 
             <li class="nav-item"> 
-                <a class="btn btn-success" href="">See Restaurants</a> </li> 
+                <a class="btn btn-success" href="">See hashtags</a> </li> 
             <li class="nav-item"> 
                 <a class="btn btn-warning" href="">See Items</a> </li> 
             
@@ -41,8 +41,6 @@ var flag=0
 function show_rest(){
   if(flag==0){
     for (let x=0;x<restaurants.length;x++){
-      // console.log(restaurants[x]["name"]);
-      // console.log("/restaurants/"+restaurants[x]["id"]);
       var a = document.createElement('a');
       var p = document.createElement('p');
       let textNode = document.createTextNode(restaurants[x]["name"]);
