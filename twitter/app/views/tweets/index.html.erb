@@ -1,0 +1,16 @@
+
+<div class="container">
+  <p style="color: green"><%= notice %></p>
+
+  <h1>Tweets</h1>
+
+  <div id="tweets">
+    <%= render partial: 'tweet', collection: @tweets %>
+      <p>
+        
+      </p>
+   
+  </div>
+
+  <%= link_to "New tweet", new_tweet_path, class: "btn btn.success" %>
+</div>

@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-header">
+    <%=  tweet.user.full_name%>
+  </div>
+
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+    <p><%= tweet.body %></p>
+    <footer class="blockquote-footer"> <%= tweet.creationdate %></footer>
+    <footer class="blockquote-footer"> <%= tweet.list_hash %></footer>
+    <%= link_to 'Ver', tweet, class: "btn btn-success" %>
+    
+    </blockquote>
+ 
+  </div>
+
+</div>
